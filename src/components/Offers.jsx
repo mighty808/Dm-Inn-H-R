@@ -55,7 +55,7 @@ const Offers = () => {
               <p className="text-center text-text font-medium italic">
                 {offer.imageText}
               </p>
-              <button className="bg-primary text-text px-2 py-1 rounded-lg">
+              <button className="bg-primary w-[30%] text-text px-2 p rounded-sm text-[1rem]">
                 {offer.buttonText}
               </button>
             </div>

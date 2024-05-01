@@ -17,7 +17,7 @@ const LandingPage = () => {
     config: { duration: 4000 },
   });
   return (
-    <section className="w-full h-[60vh] md:h-screen  bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('2531.jpg')] homepage bg-cover bg-no-repeat   md:border-b-[20px]  sm:border-b-[10px] border-primary  ">
+    <section className="w-full h-[60vh] md:h-screen  bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('2531.jpg')] homepage bg-cover bg-no-repeat    ">
       <div className="w-full  ">
         <Navbar />
 

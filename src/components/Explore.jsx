@@ -103,13 +103,13 @@ const Explore = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5  m-auto py-4">
           {swiperImages1.map((swiperImage) => (
             <div
-              className="md:h-[32] bg-background md:h-62  rounded-md transition-opacity opacity-100  shadow-md shadow-[black]"
+              className="md:h-[32] bg-background  rounded-md transition-opacity opacity-100  shadow-sm shadow-[black]"
               key={swiperImage.id}
             >
               <img
                 src={swiperImage.image}
                 alt=""
-                className="w-full h-60 object-cover  rounded-md shadow-lg shadow-black"
+                className="w-full h-60 object-fit rounded-md shadow-lg shadow-black"
               />
             </div>
           ))}

@@ -15,8 +15,9 @@ const Navbar = () => {
   };
   const [displaySideBar, setDisplaySidebar] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const linkStyle =
-    `text-text  text-[.8rem] ${scrolled && 'text-primary'} sm:text-[.9rem] lg:text-[1rem] hover:text-orange-500 transition`;
+  const linkStyle = `  text-[.8rem] ${
+    scrolled ? "text-primary" : "text-text"
+  } sm:text-[.9rem] lg:text-[1rem] hover:text-orange-500 transition`;
   const links = [
     {
       id: 1,
@@ -68,10 +69,14 @@ const Navbar = () => {
           scrolled ? "bg-text text-primary shadow-md" : "bg-transparent "
         } `}
       >
-        <div className={`flex  gap-2`}>
+        <div className={`flex  gap-2 items-center justify-center`}>
           <img src="logo.jpeg" alt="" className="rounded-full size-10" />
-          <h2 className=" font-mono tracking-widest text-white text-2xl">
-            NGO
+          <h2
+            className={`font-mono tracking-widest text-[1.2rem] ${
+              scrolled ? "text-primary" : "text-text"
+            } md:text-2xl`}
+          >
+            DM INN
           </h2>
         </div>
         {/* hamburger and close buttons */}
@@ -83,9 +88,9 @@ const Navbar = () => {
           }}
         >
           {displaySideBar ? (
-            <FaTimes className="text-orange-500 font-mono font-bold text-2xl" />
+            <FaTimes className="text-primary font-mono font-bold text-2xl" />
           ) : (
-            <FaBars className="text-orange-500 font-mono font-bold text-2xl" />
+            <FaBars className="text-primary font-mono font-bold text-2xl" />
           )}
         </div>
 
@@ -133,14 +138,17 @@ const Navbar = () => {
               Facilities
             </a>
           </li>
-          
+
           <li className={linkStyle}>
             <a href="/" className="text-white">
               Contact
             </a>
           </li>
 
-          <button type="" className="font-mono py-1 px-4 bg-primary text-text rounded-sm">
+          <button
+            type=""
+            className="font-mono py-1 px-4 bg-primary text-text rounded-sm"
+          >
             {" "}
             Book now
           </button>
