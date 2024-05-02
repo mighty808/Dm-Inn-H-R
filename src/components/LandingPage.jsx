@@ -4,17 +4,17 @@ const LandingPage = () => {
   const styles = useSpring({
     from: { opacity: 0, transform: "translateX(-100%)" },
     to: { opacity: 1, transform: "translateX(0)" },
-    config: { duration: 1000 },
+    config: { duration: 700 },
   });
   const styles1 = useSpring({
     from: { opacity: 0, transform: "translateX(-100%)" },
     to: { opacity: 1, transform: "translateX(0)" },
-    config: { duration: 3000 },
+    config: { duration: 2000 },
   });
   const styles2 = useSpring({
     from: { opacity: 0, transform: "translateX(-100%)" },
     to: { opacity: 1, transform: "translateX(0)" },
-    config: { duration: 4000 },
+    config: { duration: 3000 },
   });
   return (
     <section className="w-full h-[60vh] md:h-screen  bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('2531.jpg')] homepage bg-cover bg-no-repeat    ">
