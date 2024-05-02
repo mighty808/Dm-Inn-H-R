@@ -33,7 +33,7 @@ const MiniServices = () => {
             }}
           />
           <div className="">
-            <p className="font-bold text-primary">check In</p>
+            <p className="font-bold text-primary">Check In</p>
             <p className="text-[.9rem] text-background">
               {checkIn ? checkIn : "yy-mm-dd"}
             </p>
@@ -83,7 +83,7 @@ const MiniServices = () => {
           type=""
           className="text-text w-20 bg-primary rounded-md h-10 m-auto md:m-0 md:my-auto "
         >
-          search
+          Search
         </button>
       </div>
     </section>
